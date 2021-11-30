@@ -9,13 +9,14 @@
 .inputsRegister{
     padding-left: 5%;
     padding-right: 5%;
+    
 }
 
-.sectionRegister{
+.divRegister{
     justify-content: center;
     align-items: center;
     border-radius: 2.5%;
-    background-color: white;
+    background-color: #ffffffcf;
     margin: 20px;
     padding: 20px;
 }
@@ -33,4 +34,8 @@
 
 .form-label{
     margin-bottom: 0 !important;
+}
+
+.botonGoogle{
+    padding-top: 20px;
 }
