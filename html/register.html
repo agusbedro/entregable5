@@ -5,19 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
-    <img src="../img/logo.png" alt="">
-    <form action="" id="register">
-        <label for="email">Email</label>
-            <input type="text" name="email" id="email" placeholder="Email">
-        <label for="name">Nombre completo</label>
-            <input type="text" name="name" id="name" placeholder="Nombre">
-        <label for="user">Nombre de usuario</label>
-            <input type="text" name="user" id="user" placeholder="user">
-        <label for="password">Contraseña</label>
-            <input type="text" name="password" id="password" placeholder="Contraseña">
-        <button type="submit">Registrarse</button>
-    </form>
+<body class="register">
+
+    <img src="../img/logo.png" width="100px" height="100px" class="rounded mx-auto d-block logo" alt="">
+
+    <div class="divRegister">
+
+        <form action="./home.html">
+            <div class="inputsRegister">
+
+                <div class="mb-2">
+                    <label class="form-label">Email</label>
+                    <input type="email" id="emailRegister" class="form-control" required>
+                </div>
+                <div class="mb-2">
+                    <label class="form-label">Nombre completo</label>
+                    <input type="text" id="nombreCompletoRegister" class="form-control" required>
+                </div>
+                <div class="mb-2">
+                    <label  class="form-label">Nombre usuario</label>
+                    <input type="text" id="usuarioRegister" class="form-control" required>
+                </div>
+                <div class="mb-2">
+                    <label class="form-label">Contraseña</label>
+                    <input type="password" id="contraseñaRegister" class="form-control" required>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary btnRegistro">Registrarte</button>
+            </div>
+        </form>
+        
+    </div>
+
+    <footer>
+        <script src="../js/action.js"></script>
+    </footer>
 </body>
 </html>

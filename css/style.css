@@ -1,0 +1,29 @@
+.register{
+    background-image: url('/img/imagenCel.png');
+}
+
+.inputsRegister{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.divRegister{
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.5%;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.logo{
+    margin-top: 40px;
+}
+
+.btnRegistro{
+    padding-left: 25%;
+    padding-right: 25%;
+    background-color: #0180be;
+    border-color: #0180be;
+}
