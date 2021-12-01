@@ -46,14 +46,28 @@
 }
 
 .navbar{
-    display: flex;
-    justify-content: flex-end;
     list-style: none;
 }
 
-.logo-home, .logo-persona, .logo-mensaje, .log-out, .logo-publicar {
+.logo-home, .logo-persona, .logo-mensaje, .log-out, .logo-publicar, .logo-lupa, .logo-options{
     width: 8vw;
     height: 8vw;
+}
+
+
+.logo-options{
+    width: 20px;
+    height: 20px;
+}
+
+.btn-options{
+    background: none;
+        color: inherit;
+        border: none;
+}
+
+.article1{
+    margin-top: 70px;
 }
 
 
@@ -63,22 +77,53 @@
 }
 
 .header-home{
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
-    margin: 15px 0 0 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color: white;
+    border-bottom: 1px #C4C4C4 solid;
+    top: 0;
+    padding-top: 0px;
+}
+
+.footer-home{
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color: white;
+    border-top: 1px #C4C4C4 solid;
+    bottom: 0;
+    padding: 10px 0;
+}
+
+footer.footer-home > nav {
+    display: flex;
+    justify-content: space-around;
 }
 
 ul, .nombre{
+    padding-bottom: 0;
     margin-bottom: 0;
 }
-ul.navbar > li { 
-    margin-right: 15px;
+
+ul.navbar{
+    padding-top: 14px;
+    padding-bottom: 0;
 }
+
 
 .btn-publicar{
     width: 100px;
     height: 40px;
     background-color: #0180be;
+}
+
+ul.navbar > li { 
+padding-left: 20px;
 }
 
 .publicar{
@@ -97,11 +142,16 @@ ul.navbar > li {
 }
 
 .logo{
-    margin-left: 7vw;
+    margin-left: 4vw;
 }
 
 .foto-perfil{
     margin: 1vw;
+}
+
+nav > ul.navbar {
+display: flex;
+align-items: center ;
 }
 
 .container-publicar, .pub-1{
