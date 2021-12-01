@@ -2,7 +2,7 @@
     background-image: url('/img/imagenCel.png');
 }
 
-.logo{
+.logo-login, .logo-register{
     margin-top: 40px;
 }
 
@@ -32,10 +32,103 @@
     padding-top: 50px;
 }
 
+.separador-home{
+    padding-top: 10px;
+
+}
+
 .form-label{
     margin-bottom: 0 !important;
 }
 
 .botonGoogle{
     padding-top: 20px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.logo-home, .logo-persona, .logo-mensaje, .log-out, .logo-publicar {
+    width: 8vw;
+    height: 8vw;
+}
+
+
+.logo-img, .logo-video, .logo-link, .logo-like, .logo-comment, .logo-share{
+    width: 6vw;
+    height: 6vw;   
+}
+
+.header-home{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 0 0;
+}
+
+ul, .nombre{
+    margin-bottom: 0;
+}
+ul.navbar > li { 
+    margin-right: 15px;
+}
+
+.btn-publicar{
+    width: 100px;
+    height: 40px;
+    background-color: #0180be;
+}
+
+.publicar{
+    padding: 0.5vw;
+    border-top: 0.080vw #C4C4C4 solid;
+    border-bottom: 0.080vw #C4C4C4 solid;
+
+    margin: 15px 0;
+    padding: 5px 10px;
+}
+
+.input-publicar{
+    border: none;
+    outline: none;
+    font-size: large;
+}
+
+.logo{
+    margin-left: 7vw;
+}
+
+.foto-perfil{
+    margin: 1vw;
+}
+
+.container-publicar, .pub-1{
+    align-items: center;
+}
+
+ul.options-publish > li {
+     border: none;
+}
+
+.nombre{
+    font-weight: bold;
+}
+
+.interacciones{
+    list-style: none;
+    margin: 13px;
+}
+
+section.publicaciones > article{
+    border-bottom: 10px #C4C4C4 solid;
+}
+
+.text{
+    margin-left: 13px;
+}
+
+section.publicaciones > article > p{
+    padding-right: 13px;
 }
