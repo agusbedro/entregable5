@@ -299,7 +299,7 @@ header p{
 }
 
 
-@media only screen and (max-width: 1024px){
+@media only screen and (min-width: 1000px){
 
     @keyframes scroll{
         0%{background-position-x: 0px;}
@@ -308,7 +308,7 @@ header p{
 
     @keyframes movHuellas {
         0%{transform: translateY(0);}
-        100%{transform: translateY(300px);}
+        100%{transform: translateY(645px);}
     }
     
     .layer{
@@ -320,15 +320,60 @@ header p{
         background-image: url("../img/backgroundIndex.png");
         background-repeat: repeat-x;
         background-size: cover;
-        animation: scroll 200s infinite linear;
+        animation: scroll 150s infinite linear;
     }
 
     .huella1{
-        position: absolute;
-        top: 10px;
-        left: 10px;
+        left: 40px;
         animation: movHuellas 10s infinite linear;
     }
 
+    .huella2{
+        left: 190px;
+        animation: movHuellas 20s infinite linear;
+    }
 
+    .huella3{
+        left: 340px;
+        animation: movHuellas 15s infinite linear;
+    }
+
+    .huella4{
+        left: 490px;
+        animation: movHuellas 8s infinite linear;
+    }
+
+    .huella5{
+        left: 640px;
+        animation: movHuellas 11s infinite linear;
+    }
+
+    .huella7{
+        left: 790px;
+        animation: movHuellas 12s infinite linear;
+    }
+
+    .huella8{
+        left: 940px;
+        animation: movHuellas 13s infinite linear;
+    }
+
+    .huella9{
+        left: 1090px;
+        animation: movHuellas 9s infinite linear;
+    }
+
+    .huella10{
+        left: 1240px;
+        animation: movHuellas 17s infinite linear;
+    }
+
+    .huella6{
+        left: 1390px;
+        animation: movHuellas 15s infinite linear;
+    }
+    .huella{
+        position: absolute;
+        top: 10px;
+    }
 }

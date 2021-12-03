@@ -5,21 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <div class="layer"></div>
 
+        <img src="../img/huellita.png" class="huella1 huella" alt="">
+        <img src="../img/roja.png" class="huella2 huella" alt="">
+        <img src="../img/huellita.png" class="huella3 huella" alt="">
+        <img src="../img/amarilla.png" class="huella4 huella" alt="">
+        <img src="../img/roja.png" class="huella5 huella" alt="">
+    
+        <img src="../img/huellita.png" class="huella6 huella" alt="">
+        <img src="../img/roja.png" class="huella7 huella" alt="">
+        <img src="../img/amarilla.png" class="huella8 huella" alt="">
+        <img src="../img/amarilla.png" class="huella9 huella" alt="">
+        <img src="../img/huellita.png" class="huella10 huella" alt="">
+    
         
-    <img src="../img/huellita.png" class="huella1" alt="">
+        <div style="display: flex; justify-content: center;">
 
-    <div class="huellas2"></div>
-    <div class="huellas3"></div>
-    <div class="huellas4"></div>
-    <div class="huellas5"></div>
-    <div class="huellas6"></div>
-    <div class="huellas7"></div>
-    <div class="huellas8"></div>
+        
+        <section id="login" style="position: fixed; z-index: 1000;">
+            <img src="../img/logo.png" width="100px" height="100px" class="rounded mx-auto d-block logo-login" alt="">
+    
+            <div class="divRegister">
+                <form>
+                    <div class="inputsRegister">
+                        <div class="mb-2">
+                            <label  class="form-label">Nombre usuario</label>
+                            <input type="text" id="usuarioRegister" class="form-control" required>
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label">Contraseña</label>
+                            <input type="password" id="contraseñaRegister" class="form-control" required>
+                        </div>
+                        <a href="./changePassword.html"><p style="padding-top: 5px;">¿Olvidaste tu contraseña?</p></a>              
+                    </div>       
+                </form>
+    
+                <div class="text-center">
+                    <button id="btnLogin" onclick="buttonLogin" class="btn btn-primary btnRegistro">Iniciar sesion</button>
+                </div>
+    
+                <img src="../img/separador.png" class="rounded mx-auto d-block separador" width="100%" alt="">
+    
+                <h2 style="font-size: 1rem; text-align: center; padding-top: 25px;margin: 0;">No tenes cuenta? <a href="./register.html">Registrate</a></h2>
+    
+                <div class="text-center botonGoogle">
+                    <button class="btn btn-light"><img src="../img/google.png" height="40px" width="40px" alt="">Iniciar sesion con google</button>
+                </div>
+            </div>
+        </section>
+    
+        <div id="cargaLogin"></div>
+    </div>
+    
+    
+        
+        <script src="/js/action.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 
 </body>
 </html>
