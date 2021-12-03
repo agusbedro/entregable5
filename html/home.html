@@ -15,21 +15,19 @@
         <nav>
             <ul class="navbar"> 
                 <li><img src="../img/publica.png" class="logo-publicar"></li>
-                <li><img src="../img/log-out.png" class="log-out"></li>
-                <li><img src="../img/message.png" class="logo-mensaje"></li>
-
+            <!--TODO--><li><a href="            "><img src="../img/message.png" class="logo-mensaje"></a></li>
             </ul>
         </nav>
     </header>
 
     <footer class="footer-home">
         <nav>
-            <a href=""><img src="../img/home.png" class="logo-home"></a>
-            <a href=""><img src="../img/lupa.png" class="logo-lupa"> </a>
+            <a href="home.html"><img src="../img/home.png" class="logo-home"></a>
+            <a href="busqueda.html"><img src="../img/lupa.png" class="logo-lupa"> </a>
             <a href=""><img src="../img/persona.png" class="logo-persona"></a>
+            <a href="login.html"><img src="../img/log-out.png" class="log-out"></a>
         </nav>
-    </footer>
-    
+    </footer>    
 
 
    <!-- <div class="publicar">
@@ -56,17 +54,61 @@
             <div class="d-flex pub-1">
                 <img src="../img/animal2.jfif" width="50px" height="50px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
                 <p class="p-2 flex-grow-1 nombre" >Fermin Maly</p>
-                <button class="p-2 btn-options" ><img src="../img/opciones.png" class="logo-options"></button>
+                
+            
+                <div class="dropdown p-2">
+                    <button class="btn btn-options" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="../img/opciones.png" class="logo-options">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Eliminar</a>
+                      <a class="dropdown-item" href="#">Editar</a>
+                      <a class="dropdown-item" href="#">Publicitar</a>
+                      <a class="dropdown-item" href="#">Copiar enlace</a>
+                    </div>
+                </div>
+            
             </div>
             
 
             <img src="../img/gatito.jpg" width="100%" alt="">
 
+            <p style="margin: 10px 0 0 20px;">13 me gusta</p>
             <ul class="list-group list-group-horizontal d-flex justify-content-between interacciones"> 
-                <li><img src="../img/like.png" class="logo-like"> Me gusta</li>
-                <li><img src="../img/comment.png" class="logo-comment"> Comentar</li>
-                <li><img src="../img/share.png" class="logo-share"> Compartir</li>
+                <button  id="btn-like1"><img src="../img/like.png" class="logo-like" id="img-like1"> Me gusta</button>
+                <button id="btn-comment1"><img src="../img/comment.png" class="logo-comment" id="img-comment1"> Comentar</button>
+                
+                <button  id="btn-share1" class="btn btn-lg" data-toggle="modal" data-target="#myModal"><img src="../img/share.png" class="logo-share" id="img-share1"> Compartir</button>
+                
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                  
+                      <!-- Modal content-->
+                      <div class="modal-content" style="justify-content: center;">
+                        <div class="modal-header" style="align-items: center;">
+                            <img src="../img/animal2.jfif" width="50px" height="50px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+                            <p class="p-2 flex-grow-1 nombre" >Fermin Maly</p>
+                          <button type="button" class="close" data-dismiss="modal" style="margin: 0;">&times;</button>
+
+                        </div>
+                        <div class="modal-body" style="height: 150px; margin: 0 10px;">
+                          <input type="text" style="margin-top: 20px; width: 300px; border: none;" placeholder="Haz un comentario...">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                          <button type="button" class="btn btn-primary" data-dismiss="modal">Compartir</button>
+                        </div>
+                      </div>
+                  
+                    </div>
+                  </div>
             </ul>
+            <p  style="margin: 0 0 10px 20px;">Ver 10 comentarios mas..</p>
+
+            <div >
+                <input type="text" class="form-control input-comment" id="coment1" placeholder="Comentar..." aria-label="Comentario" >
+            </div>
+
         </article>
 
 
@@ -74,17 +116,73 @@
             <div class="d-flex pub-1">
                 <img src="../img/animal4.jpg" width="50px" height="50px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
                 <p class="p-2 flex-grow-1 nombre">Agus Lopez</p>
-                <button class="p-2 btn-options" ><img src="../img/opciones.png" class="logo-options"></button>
+                <div class="dropdown p-2">
+                    <button class="btn btn-options" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="../img/opciones.png" class="logo-options">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Denunciar</a>
+                      <a class="dropdown-item" href="#">Ocultar</a>
+                      <a class="dropdown-item" href="#">Dejar de seguir</a>
+                      <a class="dropdown-item" href="#">Copiar enlace</a>
+                    </div>
+                </div>            
             </div>
     
             <p class="text">Se busca veterinari@ full-time para veterinaria
                 “Patitas”. Interesados mandar mensaje.</p>
+                
+                <p style="margin: 10px 0 0 20px;">3 me gusta</p>
+
+                <ul class="list-group list-group-horizontal d-flex justify-content-between interacciones"> 
+                    <button  id="btn-like2"><img src="../img/like.png" class="logo-like" id="img-like2"> Me gusta</button>
+                    <button id="btn-comment2"><img src="../img/comment.png" class="logo-comment" id="img-comment2"> Comentar</button>
+                    <button  id="btn-share2"><img src="../img/share.png" class="logo-share" id="img-share2"> Compartir</button>
+                </ul>
+
+                <p  style="margin: 0 0 10px 20px;">Ver 5 comentarios mas..</p>
+
+            <div >
+                <input type="text" class="form-control input-comment " id="coment2" placeholder="Comentar..." aria-label="Comentario" >
+            </div>
+        </article>
+
+        <article>
+            
+            <div class="d-flex pub-1">
+                <img src="../img/animal3.jpg" width="50px" height="50px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+                
+                <div class="p-2 flex-grow-1">
+                    <p class="nombre">Mario Diaz</p>
+                    <p class="font-weight-light">PUBLICIDAD</p>
+                </div>
+                
+                <div class="dropdown p-2">
+                    <button class="btn btn-options" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="../img/opciones.png" class="logo-options">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Denunciar</a>
+                        <a class="dropdown-item" href="#">Ocultar</a>
+                        <a class="dropdown-item" href="#">Dejar de seguir</a>
+                        <a class="dropdown-item" href="#">Copiar enlace</a>
+                    </div>
+                </div>            </div>
+
+            <img src="../img/publicidad2.jpg" width="100%" alt="">
+            <p style="margin: 10px 0 0 20px;">80 me gusta</p>
 
             <ul class="list-group list-group-horizontal d-flex justify-content-between interacciones"> 
-                <li><img src="../img/like.png" class="logo-like"> Me gusta</li>
-                <li><img src="../img/comment.png" class="logo-comment"> Comentar</li>
-                <li><img src="../img/share.png" class="logo-share"> Compartir</li>
+                <button  id="btn-like3"><img src="../img/like.png" class="logo-like" id="img-like3"> Me gusta</button>
+                <button id="btn-comment3"><img src="../img/comment.png" class="logo-comment" id="img-comment3"> Comentar</button>
+                <button  id="btn-share3"><img src="../img/share.png" class="logo-share" id="img-share3"> Compartir</button>
             </ul>
+
+            <p  style="margin: 0 0 10px 20px;">Ver 7 comentarios mas..</p>
+
+            <div >
+                <input type="text" class="form-control input-comment" id="coment3" placeholder="Comentar..." aria-label="Comentario" >
+            </div>
         </article>
 
 
@@ -92,51 +190,107 @@
             <div class="d-flex pub-1">
                 <img src="../img/animal3.jpg" width="50px" height="50px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
                 <p class="p-2 flex-grow-1 nombre">Mario Diaz</p>
-                <button class="p-2 btn-options" ><img src="../img/opciones.png" class="logo-options"></button>
+                <div class="dropdown p-2">
+                    <button class="btn btn-options" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="../img/opciones.png" class="logo-options">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Denunciar</a>
+                        <a class="dropdown-item" href="#">Ocultar</a>
+                        <a class="dropdown-item" href="#">Dejar de seguir</a>
+                        <a class="dropdown-item" href="#">Copiar enlace</a>
+                    </div>
+                </div>            
             </div>
        
             <p class="text">A partir del lunes 10/12 horario de corrido de 8hs a 17hs.</p>
 
+            <p style="margin: 10px 0 0 20px;">1 me gusta</p>
+
             <ul class="list-group list-group-horizontal d-flex justify-content-between interacciones"> 
-                <li><img src="../img/like.png" class="logo-like"> Me gusta</li>
-                <li><img src="../img/comment.png" class="logo-comment"> Comentar</li>
-                <li><img src="../img/share.png" class="logo-share"> Compartir</li>
+                <button  id="btn-like4"><img src="../img/like.png" class="logo-like" id="img-like4"> Me gusta</button>
+                <button id="btn-comment4"><img src="../img/comment.png" class="logo-comment" id="img-comment4"> Comentar</button>
+                <button  id="btn-share4"><img src="../img/share.png" class="logo-share" id="img-share4"> Compartir</button>
             </ul>
+
+            <p  style="margin: 0 0 10px 20px;">Ver 20 comentarios mas..</p>
+
+            <div >
+                <input type="text" class="form-control input-comment" id="coment4" placeholder="Comentar..." aria-label="Comentario" >
+            </div>
         </article>
        
         <article>
             <div class="d-flex pub-1">
                 <img src="../img/animal5.jpg" width="50px" height="50px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
                 <p class="p-2 flex-grow-1 nombre">Luana Garcia</p>
-                <button class="p-2 btn-options" ><img src="../img/opciones.png" class="logo-options"></button>
+                <div class="dropdown p-2">
+                    <button class="btn btn-options" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="../img/opciones.png" class="logo-options">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Denunciar</a>
+                        <a class="dropdown-item" href="#">Ocultar</a>
+                        <a class="dropdown-item" href="#">Dejar de seguir</a>
+                        <a class="dropdown-item" href="#">Copiar enlace</a>
+                    </div>
+                </div>            
             </div>
        
            <h1>INSERTAR GALERIA DE IMAGENES</h1>
 
-            <ul class="list-group list-group-horizontal d-flex justify-content-between interacciones"> 
-                <li><img src="../img/like.png" class="logo-like"> Me gusta</li>
-                <li><img src="../img/comment.png" class="logo-comment"> Comentar</li>
-                <li><img src="../img/share.png" class="logo-share"> Compartir</li>
-            </ul>
+           <p style="margin: 10px 0 0 20px;">120 me gusta</p>
+
+           <ul class="list-group list-group-horizontal d-flex justify-content-between interacciones"> 
+            <button  id="btn-like5"><img src="../img/like.png" class="logo-like" id="img-like5"> Me gusta</button>
+            <button id="btn-comment5"><img src="../img/comment.png" class="logo-comment" id="img-comment5"> Comentar</button>
+            <button  id="btn-share5"><img src="../img/share.png" class="logo-share" id="img-share5"> Compartir</button>
+        </ul>
+        <p  style="margin: 0 0 10px 20px;">Ver 10 comentarios mas..</p>
+
+            <div >
+                <input type="text" class="form-control input-comment" id="coment5" placeholder="Comentar..." aria-label="Comentario" >
+            </div>
         </article>
 
-        <article>
+        <article style="margin-bottom: 60px;">
             <div class="d-flex pub-1">
                 <img src="../img/animal5.jpg" width="50px" height="50px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
                 <p class="p-2 flex-grow-1 nombre">Luana Garcia</p>
-                <button class="p-2 btn-options" ><img src="../img/opciones.png" class="logo-options"></button>
+                <div class="dropdown p-2">
+                    <button class="btn btn-options" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="../img/opciones.png" class="logo-options">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Denunciar</a>
+                        <a class="dropdown-item" href="#">Ocultar</a>
+                        <a class="dropdown-item" href="#">Dejar de seguir</a>
+                        <a class="dropdown-item" href="#">Copiar enlace</a>
+                    </div>
+                </div>            
             </div>
        
             <p class="text">No saben lo linda que esta quedando la nueva veterinaria...</p>
 
+            <p style="margin: 10px 0 0 20px;">10 me gusta</p>
+
             <ul class="list-group list-group-horizontal d-flex justify-content-between interacciones"> 
-                <li><img src="../img/like.png" class="logo-like"> Me gusta</li>
-                <li><img src="../img/comment.png" class="logo-comment"> Comentar</li>
-                <li><img src="../img/share.png" class="logo-share"> Compartir</li>
+                <button  id="btn-like6"><img src="../img/like.png" class="logo-like" id="img-like6"> Me gusta</button>
+                <button id="btn-comment6"><img src="../img/comment.png" class="logo-comment" id="img-comment6"> Comentar</button>
+                <button  id="btn-share6"><img src="../img/share.png" class="logo-share" id="img-share6"> Compartir</button>
             </ul>
+            <p  style="margin: 0 0 10px 20px;">Ver 15 comentarios mas..</p>
+
+            <div >
+                <input type="text" class="form-control input-comment" id="coment6" placeholder="Comentar..." aria-label="Comentario" >
+            </div>
         </article>
 
     </section>
 
+    <script src="../js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
