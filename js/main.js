@@ -37,19 +37,19 @@ function likear(numero){
 
     let img_like = document.getElementById("img-like"+numero);
     
-    if(img_like.src == "http://127.0.0.1:5500/img/like.png")
-        img_like.src = "http://127.0.0.1:5500/img/like-pink.png";
-    else if(img_like.src == "http://127.0.0.1:5500/img/like-pink.png")
-        img_like.src = "http://127.0.0.1:5500/img/like.png";
+    if(img_like.src == "http://127.0.0.1:5501/img/like.png")
+        img_like.src = "http://127.0.0.1:5501/img/like-celeste.png";
+    else if(img_like.src == "http://127.0.0.1:5501/img/like-celeste.png")
+        img_like.src = "http://127.0.0.1:5501/img/like.png";
 }
 
 function dislike(numero){
     let img_dislike = document.getElementById("img-dislike"+numero);
     
-    if(img_dislike.src == "http://127.0.0.1:5500/img/dislike.png")
-        img_dislike.src = "http://127.0.0.1:5500/img/dislike-rojo.png";
-    else if(img_dislike.src == "http://127.0.0.1:5500/img/dislike-rojo.png")
-        img_dislike.src = "http://127.0.0.1:5500/img/dislike.png";
+    if(img_dislike.src == "http://127.0.0.1:5501/img/dislike.png")
+        img_dislike.src = "http://127.0.0.1:5501/img/dislike-rojo.png";
+    else if(img_dislike.src == "http://127.0.0.1:5501/img/dislike-rojo.png")
+        img_dislike.src = "http://127.0.0.1:5501/img/dislike.png";
 }
 
 
@@ -137,7 +137,7 @@ btn_like1.addEventListener("click", function(e) {
     let mensaje = document.getElementById('mgsPublicacion1');
     mensaje.innerHTML = '14 me gusta'
     let img_like = document.getElementById("img-like1");
-    if(img_like.src == "http://127.0.0.1:5500/img/like-pink.png")
+    if(img_like.src == "http://127.0.0.1:5501/img/like-celeste.png")
         mensaje.innerHTML = '13 me gusta'
     likear(1);
 });
@@ -146,7 +146,7 @@ btn_like2.addEventListener("click", function(e) {
     mensaje.innerHTML = '4 me gusta'
     let img_like = document.getElementById("img-like2");
 
-    if(img_like.src == "http://127.0.0.1:5500/img/like-pink.png")
+    if(img_like.src == "http://127.0.0.1:5501/img/like-celeste.png")
         mensaje.innerHTML = '3 me gusta'
     likear(2);
 });
@@ -154,7 +154,7 @@ btn_like3.addEventListener("click", function(e) {
     let mensaje = document.getElementById('mgsPublicacion3');
     mensaje.innerHTML = '81 me gusta'
     let img_like = document.getElementById("img-like3");
-    if(img_like.src == "http://127.0.0.1:5500/img/like-pink.png")
+    if(img_like.src == "http://127.0.0.1:5501/img/like-celeste.png")
         mensaje.innerHTML = '80 me gusta'
     likear(3);
 });
@@ -162,7 +162,7 @@ btn_like4.addEventListener("click", function(e) {
     let mensaje = document.getElementById('mgsPublicacion4');
     mensaje.innerHTML = '2 me gusta'
     let img_like = document.getElementById("img-like4");
-    if(img_like.src == "http://127.0.0.1:5500/img/like-pink.png")
+    if(img_like.src == "http://127.0.0.1:5501/img/like-celeste.png")
         mensaje.innerHTML = '1 me gusta'
     likear(4);
 });
@@ -170,7 +170,7 @@ btn_like5.addEventListener("click", function(e) {
     let mensaje = document.getElementById('mgsPublicacion5');
     mensaje.innerHTML = '121 me gusta'
     let img_like = document.getElementById("img-like5");
-    if(img_like.src == "http://127.0.0.1:5500/img/like-pink.png")
+    if(img_like.src == "http://127.0.0.1:5501/img/like-celeste.png")
         mensaje.innerHTML = '120 me gusta'
     likear(5);
 });
@@ -178,7 +178,7 @@ btn_like6.addEventListener("click", function(e) {
     let mensaje = document.getElementById('mgsPublicacion6');
     mensaje.innerHTML = '11 me gusta'
     let img_like = document.getElementById("img-like6");
-    if(img_like.src == "http://127.0.0.1:5500/img/like-pink.png")
+    if(img_like.src == "http://127.0.0.1:5501/img/like-celeste.png")
         mensaje.innerHTML = '10 me gusta'
     likear(6);
 });
@@ -190,10 +190,9 @@ btn_dislike1.addEventListener("click", function(e) {
     mensaje.innerHTML = '3 no me gusta'
 
     let img_like = document.getElementById("img-dislike1");
-    if(img_like.src == "http://127.0.0.1:5500/img/dislike-rojo.png")
-
+    if(img_like.src == "http://127.0.0.1:5501/img/dislike-rojo.png")
         mensaje.innerHTML = '2 no me gusta'
-    likear(1);
+    dislike(1);
 });
 
 btn_dislike2.addEventListener("click", function(e) {
@@ -201,43 +200,42 @@ btn_dislike2.addEventListener("click", function(e) {
     mensaje.innerHTML = '6 no me gusta'
 
     let img_like = document.getElementById("img-dislike2");
-    if(img_like.src == "http://127.0.0.1:5500/img/dislike-rojo.png")
-
+    if(img_like.src == "http://127.0.0.1:5501/img/dislike-rojo.png")
         mensaje.innerHTML = '5 no me gusta'
-    likear(2);
+    dislike(2);
 });
 
 btn_dislike3.addEventListener("click", function(e) {
     let mensaje = document.getElementById('dismgsPublicacion3');
     mensaje.innerHTML = '44 no me gusta'
     let img_like = document.getElementById("img-dislike3");
-    if(img_like.src == "http://127.0.0.1:5500/img/dislike-rojo.png")
+    if(img_like.src == "http://127.0.0.1:5501/img/dislike-rojo.png")
         mensaje.innerHTML = '43 no me gusta'
-    likear(3);
+    dislike(3);
 });
 btn_dislike4.addEventListener("click", function(e) {
     let mensaje = document.getElementById('dismgsPublicacion4');
     mensaje.innerHTML = '3 no me gusta'
     let img_like = document.getElementById("img-dislike4");
-    if(img_like.src == "http://127.0.0.1:5500/img/dislike-rojo.png")
+    if(img_like.src == "http://127.0.0.1:5501/img/dislike-rojo.png")
         mensaje.innerHTML = '2 no me gusta'
-    likear(4);
+    dislike(4);
 });
 btn_dislike5.addEventListener("click", function(e) {
     let mensaje = document.getElementById('dismgsPublicacion5');
     mensaje.innerHTML = '56 no me gusta'
     let img_like = document.getElementById("img-dislike5");
-    if(img_like.src == "http://127.0.0.1:5500/img/dislike-rojo.png")
+    if(img_like.src == "http://127.0.0.1:5501/img/dislike-rojo.png")
         mensaje.innerHTML = '55 no me gusta'
-    likear(5);
+    dislike(5);
 });
 btn_dislike6.addEventListener("click", function(e) {
     let mensaje = document.getElementById('dismgsPublicacion6');
     mensaje.innerHTML = '3 no me gusta'
     let img_like = document.getElementById("img-dislike6");
-    if(img_like.src == "http://127.0.0.1:5500/img/dislike-rojo.png")
+    if(img_like.src == "http://127.0.0.1:5501/img/dislike-rojo.png")
         mensaje.innerHTML = '2 no me gusta'
-    likear(6);
+    dislike(6);
 });
 
 
