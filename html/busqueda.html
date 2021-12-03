@@ -60,25 +60,52 @@
 
     <article>
         <h2 class="titulo-cuentas">Cuentas recomendadas</h2>
-        <div class="d-flex recomendada rounded">
-            <img src="../img/animal4.jpg" width="100px" height="100px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
-            <p class="p-2 flex-grow-1 nombre">Agus Lopez</p>
-            <button class="btn btn-primary">Seguir</button>
+        <div id="cuentas1">
+            <div class="d-flex recomendada rounded" id="rec1">
+                <img src="../img/animal4.jpg" id="foto1" width="100px" height="100px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+                <p class="p-2 flex-grow-1 nombre" id="nombre1">Agus Lopez</p>
+                <button class="btn btn-primary" id="seguir1"><p id="text1" style="padding: 0; margin: 0%;">Seguir</p> </button>
+            </div>
+            <div class="d-flex recomendada rounded" id="rec2">
+                <img src="../img/animal2.jfif" width="100px" height="100px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" id="img-perfil1" alt="">
+                <p class="p-2 flex-grow-1 nombre">Fermin Maly</p>
+                <button class="btn btn-primary" id="seguir2"><p id="text2" style="padding: 0; margin: 0%;">Seguir</p></button>
+            </div>
+            <div class="d-flex recomendada rounded" id="rec3" >
+                <img src="../img/animal3.jpg" width="100px" height="100px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+                <p class="p-2 flex-grow-1 nombre">Mario Diaz</p>
+                <button class="btn btn-primary" id="seguir3"><p id="text3" style="padding: 0; margin: 0%;">Seguir</p> </button>
+            </div>
+    
+            <div style="margin-bottom: 70px;" class="text-center">
+                <button class="btn btn-light" id="btn-ver-mas">Ver otros</button>
+            </div>
+    
         </div>
-        <div class="d-flex recomendada rounded">
-            <img src="../img/animal2.jfif" width="100px" height="100px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
-            <p class="p-2 flex-grow-1 nombre">Fermin Maly</p>
-            <button class="btn btn-primary">Seguir</button>
-        </div>
-        <div class="d-flex recomendada rounded" >
-            <img src="../img/animal3.jpg" width="100px" height="100px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
-            <p class="p-2 flex-grow-1 nombre">Mario Diaz</p>
-            <button class="btn btn-primary">Seguir</button>
-        </div>
+        
 
-        <div style="margin-bottom: 70px;" class="text-center">
-            <button class="btn btn-light">Ver otros</button>
+        <div style="display: none;" id="cuentas2">
+            <div class="d-flex recomendada rounded"  id="rec4">
+                <img src="../img/animal5.jpg" width="100px" height="100px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+                <p class="p-2 flex-grow-1 nombre">Carlos Hernandez</p>
+                <button class="btn btn-primary" id="seguir4"><p id="text4" style="padding: 0; margin: 0%;">Seguir</p> </button>
+            </div>
+            <div class="d-flex recomendada rounded " id="rec5">
+                <img src="../img/animal3.jpg" width="100px" height="100px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+                <p class="p-2 flex-grow-1 nombre">Mariela Gomez</p>
+                <button class="btn btn-primary" id="seguir5"><p id="text5" style="padding: 0; margin: 0%;">Seguir</p></button>
+            </div>
+            <div class="d-flex recomendada rounded " id="rec6" >
+                <img src="../img/persona1.png" width="100px" height="100px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+                <p class="p-2 flex-grow-1 nombre"> Diaz</p>
+                <button class="btn btn-primary" id="seguir6"><p id="text6" style="padding: 0; margin: 0%;">Seguir</p> </button>
+            </div>
+
+            <div style="margin-bottom: 70px;" class="text-center">
+                <button class="btn btn-light" id="btn-ver-mas2">Ver otros</button>
+            </div>
         </div>
+        
 
     </article>
 
@@ -93,6 +120,6 @@
         </nav>
     </footer>    
 
-
+    <script src="../js/busqueda.js"></script>
 </body>
 </html>
