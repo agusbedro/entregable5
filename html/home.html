@@ -29,25 +29,6 @@
         </nav>
     </footer>    
 
-
-   <!-- <div class="publicar">
-        
-        <div class="d-flex">
-            <img src="../img/perfil1.jpg" width="70px" height="70px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil">
-            <input type="text" name="" class="p-2 flex-grow-1 input-publicar" placeholder="Comparte lo que piensas!">
-        </div>
-
-        <div class="d-flex container-publicar">
-            <ul class="list-group list-group-horizontal mr-auto p-2 options-publish">
-                <li class="list-group-item"><img src="../img/imagen.png" class="logo-img"></li>
-                <li class="list-group-item"><img src="../img/camara-de-video.png" class="logo-video"></li>
-                <li class="list-group-item"><img src="../img/clip.png" class="logo-link"></li>
-            </ul>
-            <button type="button" class="btn btn-primary btn-publicar">Publicar</button>
-        </div>
-
-    </div> -->
-
     <section class="publicaciones">
         
         <article class="article1">
@@ -61,7 +42,7 @@
                         <img src="../img/opciones.png" class="logo-options">
                     </button>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Eliminar</a>
+                      <a class="dropdown-item" href="#" style="color: red;">Eliminar</a>
                       <a class="dropdown-item" href="#">Editar</a>
                       <a class="dropdown-item" href="#">Publicitar</a>
                       <a class="dropdown-item" href="#">Copiar enlace</a>
@@ -73,7 +54,7 @@
 
             <img src="../img/gatito.jpg" width="100%" alt="">
 
-            <p style="margin: 10px 0 0 20px;">13 me gusta</p>
+            <p style="margin: 10px 0 0 20px;" id="mgsPublicacion1">13 me gusta</p>
             <ul class="list-group list-group-horizontal d-flex justify-content-between interacciones"> 
                 <button  id="btn-like1"><img src="../img/like.png" class="logo-like" id="img-like1"> Me gusta</button>
                 <button id="btn-comment1"><img src="../img/comment.png" class="logo-comment" id="img-comment1"> Comentar</button>
@@ -103,9 +84,15 @@
                     </div>
                   </div>
             </ul>
+
+            <div id="comentarioFoto1" style="display: none;">
+                <a href="chatIndividual.html" style="padding: 20px;"><img src="/img/animal2.jfif" width="50px" height="50px" class="rounded-circle"></a>
+                <a href="chatIndividual.html">Fermin Maly</a>
+                <p style="margin: 25px 0 0 -78px;" id="comentario1"></p>
+            </div>
             <p  style="margin: 0 0 10px 20px;">Ver 10 comentarios mas..</p>
 
-            <div >
+            <div style="margin: 0 5% 10px 5%;">
                 <input type="text" class="form-control input-comment" id="coment1" placeholder="Comentar..." aria-label="Comentario" >
             </div>
 
@@ -132,7 +119,7 @@
             <p class="text">Se busca veterinari@ full-time para veterinaria
                 “Patitas”. Interesados mandar mensaje.</p>
                 
-                <p style="margin: 10px 0 0 20px;">3 me gusta</p>
+                <p style="margin: 10px 0 0 20px;"id="mgsPublicacion2">3 me gusta</p>
 
                 <ul class="list-group list-group-horizontal d-flex justify-content-between interacciones"> 
                     <button  id="btn-like2"><img src="../img/like.png" class="logo-like" id="img-like2"> Me gusta</button>
@@ -140,9 +127,15 @@
                     <button  id="btn-share2"><img src="../img/share.png" class="logo-share" id="img-share2"> Compartir</button>
                 </ul>
 
+                <div id="comentarioFoto2" style="display: none;">
+                    <a href="chatIndividual.html" style="padding: 20px;"><img src="/img/animal2.jfif" width="50px" height="50px" class="rounded-circle"></a>
+                    <a href="chatIndividual.html">Fermin Maly</a>
+                    <p style="margin: 25px 0 0 -78px;" id="comentario2"></p>
+                </div>
+
                 <p  style="margin: 0 0 10px 20px;">Ver 5 comentarios mas..</p>
 
-            <div >
+            <div style="margin: 0 5% 10px 5%;">
                 <input type="text" class="form-control input-comment " id="coment2" placeholder="Comentar..." aria-label="Comentario" >
             </div>
         </article>
@@ -170,7 +163,7 @@
                 </div>            </div>
 
             <img src="../img/publicidad2.jpg" width="100%" alt="">
-            <p style="margin: 10px 0 0 20px;">80 me gusta</p>
+            <p style="margin: 10px 0 0 20px;" id="mgsPublicacion3">80 me gusta</p>
 
             <ul class="list-group list-group-horizontal d-flex justify-content-between interacciones"> 
                 <button  id="btn-like3"><img src="../img/like.png" class="logo-like" id="img-like3"> Me gusta</button>
@@ -178,9 +171,15 @@
                 <button  id="btn-share3"><img src="../img/share.png" class="logo-share" id="img-share3"> Compartir</button>
             </ul>
 
+            <div id="comentarioFoto3" style="display: none;">
+                <a href="chatIndividual.html" style="padding: 20px;"><img src="/img/animal2.jfif" width="50px" height="50px" class="rounded-circle"></a>
+                <a href="chatIndividual.html">Fermin Maly</a>
+                <p style="margin: 25px 0 0 -78px;" id="comentario3"></p>
+            </div>
+
             <p  style="margin: 0 0 10px 20px;">Ver 7 comentarios mas..</p>
 
-            <div >
+            <div style="margin: 0 5% 10px 5%;">
                 <input type="text" class="form-control input-comment" id="coment3" placeholder="Comentar..." aria-label="Comentario" >
             </div>
         </article>
@@ -205,7 +204,7 @@
        
             <p class="text">A partir del lunes 10/12 horario de corrido de 8hs a 17hs.</p>
 
-            <p style="margin: 10px 0 0 20px;">1 me gusta</p>
+            <p style="margin: 10px 0 0 20px;" id="mgsPublicacion4">1 me gusta</p>
 
             <ul class="list-group list-group-horizontal d-flex justify-content-between interacciones"> 
                 <button  id="btn-like4"><img src="../img/like.png" class="logo-like" id="img-like4"> Me gusta</button>
@@ -213,9 +212,15 @@
                 <button  id="btn-share4"><img src="../img/share.png" class="logo-share" id="img-share4"> Compartir</button>
             </ul>
 
+            <div id="comentarioFoto4" style="display: none;">
+                <a href="chatIndividual.html" style="padding: 20px;"><img src="/img/animal2.jfif" width="50px" height="50px" class="rounded-circle"></a>
+                <a href="chatIndividual.html">Fermin Maly</a>
+                <p style="margin: 25px 0 0 -78px;" id="comentario4"></p>
+            </div>
+
             <p  style="margin: 0 0 10px 20px;">Ver 20 comentarios mas..</p>
 
-            <div >
+            <div style="margin: 0 5% 10px 5%;">
                 <input type="text" class="form-control input-comment" id="coment4" placeholder="Comentar..." aria-label="Comentario" >
             </div>
         </article>
@@ -239,16 +244,23 @@
        
            <h1>INSERTAR GALERIA DE IMAGENES</h1>
 
-           <p style="margin: 10px 0 0 20px;">120 me gusta</p>
+           <p style="margin: 10px 0 0 20px;" id="mgsPublicacion5">120 me gusta</p>
 
            <ul class="list-group list-group-horizontal d-flex justify-content-between interacciones"> 
             <button  id="btn-like5"><img src="../img/like.png" class="logo-like" id="img-like5"> Me gusta</button>
             <button id="btn-comment5"><img src="../img/comment.png" class="logo-comment" id="img-comment5"> Comentar</button>
             <button  id="btn-share5"><img src="../img/share.png" class="logo-share" id="img-share5"> Compartir</button>
         </ul>
+
+        <div id="comentarioFoto5" style="display: none;">
+            <a href="chatIndividual.html" style="padding: 20px;"><img src="/img/animal2.jfif" width="50px" height="50px" class="rounded-circle"></a>
+            <a href="chatIndividual.html">Fermin Maly</a>
+            <p style="margin: 25px 0 0 -78px;" id="comentario5"></p>
+        </div>
+
         <p  style="margin: 0 0 10px 20px;">Ver 10 comentarios mas..</p>
 
-            <div >
+            <div style="margin: 0 5% 10px 5%;">
                 <input type="text" class="form-control input-comment" id="coment5" placeholder="Comentar..." aria-label="Comentario" >
             </div>
         </article>
@@ -272,16 +284,23 @@
        
             <p class="text">No saben lo linda que esta quedando la nueva veterinaria...</p>
 
-            <p style="margin: 10px 0 0 20px;">10 me gusta</p>
+            <p style="margin: 10px 0 0 20px;" id="mgsPublicacion6">10 me gusta</p>
 
             <ul class="list-group list-group-horizontal d-flex justify-content-between interacciones"> 
                 <button  id="btn-like6"><img src="../img/like.png" class="logo-like" id="img-like6"> Me gusta</button>
                 <button id="btn-comment6"><img src="../img/comment.png" class="logo-comment" id="img-comment6"> Comentar</button>
                 <button  id="btn-share6"><img src="../img/share.png" class="logo-share" id="img-share6"> Compartir</button>
             </ul>
+
+            <div id="comentarioFoto6" style="display: none;">
+                <a href="chatIndividual.html" style="padding: 20px;"><img src="/img/animal2.jfif" width="50px" height="50px" class="rounded-circle"></a>
+                <a href="chatIndividual.html">Fermin Maly</a>
+                <p style="margin: 25px 0 0 -78px;" id="comentario6"></p>
+            </div>
+            
             <p  style="margin: 0 0 10px 20px;">Ver 15 comentarios mas..</p>
 
-            <div >
+            <div style="margin: 0 5% 10px 5%;">
                 <input type="text" class="form-control input-comment" id="coment6" placeholder="Comentar..." aria-label="Comentario" >
             </div>
         </article>
