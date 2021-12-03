@@ -301,3 +301,41 @@ header p{
 .oculto{
     display: none;
 }
+
+
+@media only screen and (max-width: 1024px){
+
+    @keyframes scroll{
+        0%{background-position-x: 0px;}
+        100%{background-position-x: -1920px;}
+    }
+
+    @keyframes movHuellas {
+        0%{background-position-y: 0vh}
+        100%{background-position-y: 1080px}
+    }
+    
+    .layer{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url("../img/backgroundIndex.png");
+        background-repeat: repeat-x;
+        background-size: cover;
+        animation: scroll 200s infinite linear;
+    }
+
+    .huellas1{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-image: url("../img/huella.png");
+        background-repeat: repeat-x;
+        background-size: cover;
+        animation: movHuellas 500s infinite linear;
+    }
+
+
+}
