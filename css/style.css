@@ -233,10 +233,9 @@ ul.interacciones > button {
     width: 80%;
 }
 
-
-
-
-
+p.comentario{
+    margin: 45px 0 0 -86px; 
+}
 
 
 
@@ -269,10 +268,8 @@ header p{
     padding: 0px 0px 0px 115px;
 }
 .mensajesChat{
-    margin-top: 320px;
+    margin-top:220px;
 }
-
-
 
 #cargaLogin{
     display: none;
@@ -282,4 +279,25 @@ header p{
     width: 100%;
     position: relative;
     z-index: 100;
+}
+
+.chat1{
+    border-radius: 15px; 
+    background-color: rgb(245, 244, 244); 
+    width: 240px; 
+    padding:10px 10px 10px 15px; 
+    margin-left: 10px;
+}
+
+.chat2{
+    border-radius: 15px; 
+    background: linear-gradient(to bottom, #33ccff 0%, #92b9f5 100%); 
+    width: 240px; 
+    padding:10px 10px 10px 15px; 
+    margin-left: 130px; 
+    color: rgb(255, 255, 255);
+}
+
+.oculto{
+    display: none;
 }

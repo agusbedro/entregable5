@@ -14,7 +14,7 @@
 
     <div class="divRegister">
 
-        <form action="./home.html">
+        
             <div class="inputsRegister">
 
                 <div class="mb-2">
@@ -36,16 +36,43 @@
             </div>
 
             <div class="text-center" style="padding-top: 15px;">
-                <button type="submit" class="btn btn-primary btnRegistro">Registrarte</button>
+                <button class="btn btn-primary btnRegistro" data-toggle="modal" data-target="#myModal">Registrarte</button>
             </div>
-        </form>
+
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+          
+              <!-- Modal content-->
+              <div class="modal-content" style="justify-content: center;">
+                <div class="modal-header" style="align-items: center;">
+                    <h4 class="p-2 flex-grow-1 nombre" >Confirmar datos</h4>
+                  <button type="button" class="close" data-dismiss="modal" style="margin: 0;">&times;</button>
+
+                </div>
+                <div class="modal-body" style="height: 150px; margin: 0 10px;">
+                  <p><span style="font-weight: bold;">Email:</span> pepe@gmail.com</p>
+                  <p><span style="font-weight: bold;">Nombre completo:</span> Pedro Rodriguez</p>
+                  <p><span style="font-weight: bold;">Nombre de usuario:</span> pepito</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                  <a href="home.html"><button type="button" class="btn btn-primary" data-dismiss="modal" id="registrar">Registrarte</button></a>
+                </div>
+              </div>
+          
+            </div>
+          </div>
 
         <h2 style="font-size: 1rem; text-align: center; padding-top: 25px;margin: 0;">Ya tenes cuenta? <a href="./login.html">Inicia sesion</a></h2>
         
     </div>
 
-    <footer>
-        <script src="../js/action.js"></script>
-    </footer>
+   
+        <script src="../js/registro.js"></script> 
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+    
 </body>
 </html>

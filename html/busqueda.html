@@ -22,99 +22,214 @@
 
 
     <form class="buscador text-center">
-        <input type="text" class="form-control input-buscar" placeholder="Buscar...">
+        <input type="text" class="form-control input-buscar" id="input-buscar" placeholder="Buscar...">
     </form>
 
     <div class="filtros">
-        <button class="btn-persona btn btn-light">Personas</button>
-        <button class="btn-hashtag btn btn-light" >Hashtags</button>
-        <button class="btn-lugar btn btn-light">Lugares</button>
+        <button class="btn btn-light" id="filtro-persona">Personas</button>
+        <button class="btn btn-light" id="filtro-hashtag">Hashtags</button>
+        <button class="btn btn-light" id="filtro-lugar">Lugares</button>
     </div>
 
-    <section class="publicaciones">
-        <article style="border-top: 10px #C4C4C4 solid; margin-top: 10px;">
-            
-            <div class="d-flex pub-1">
-                <img src="../img/animal3.jpg" width="50px" height="50px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+
+    <div  id="personas" style="display: none;">
+        <div class="d-flex recomendada rounded" id="" style=" border: none;">
+            <img src="../img/animal4.jpg" id="foto1" width="70px" height="70px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+            <p class="p-2 flex-grow-1 nombre" id="nombre1">Agus Lopez</p>
+        </div>
+        <div class="d-flex recomendada rounded" id="" style=" border: none;">
+            <img src="../img/animal3.jpg" id="foto1" width="70px" height="70px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+            <p class="p-2 flex-grow-1 nombre" id="nombre1">Agus Ramirez</p>
+        </div>
+        <div class="d-flex recomendada rounded" id="" style=" border: none;">
+            <img src="../img/animal2.jfif" id="foto1" width="70px" height="70px"  class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+            <p class="p-2 flex-grow-1 nombre" id="nombre1">Agustin F</p>
+        </div>
+        <div class="d-flex recomendada rounded" id="" style=" border: none;">
+            <img src="../img/animal5.jpg" id="foto1" width="70px" height="70px"  class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+            <p class="p-2 flex-grow-1 nombre" id="nombre1">Aguss_</p>
+        </div>
+        <div class="d-flex recomendada rounded" id="" style=" border: none;">
+            <img src="../img/gatito.jpg" id="foto1" width="70px" height="70px"  class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+            <p class="p-2 flex-grow-1 nombre" id="nombre1">Agustina D</p>
+        </div>
+        <div class="d-flex recomendada rounded" id="" style=" border: none;">
+            <img src="../img/perfil1.jpg" id="foto1" width="70px" height="70px"  class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+            <p class="p-2 flex-grow-1 nombre" id="nombre1">Agus P</p>
+        </div>
+        <div class="d-flex recomendada rounded" id="" style=" border: none;">
+            <img src="../img/persona1.png" id="foto1" width="70px" height="70px"  class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+            <p class="p-2 flex-grow-1 nombre" id="nombre1">Agus S</p>
+        </div>
+    </div>
+
+
+    <div  id="hashtags" style="display: none;">
+        <div class="d-flex recomendada rounded" id="" style=" border: none;">
+            <img src="../img/hashtag2.png" id="foto1" width="50px" height="50px"  class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+            <p class="p-2 flex-grow-1 nombre" id="nombre1">#tandil</p>
+        </div>
+        <div class="d-flex recomendada rounded" id="" style=" border: none;">
+            <img src="../img/hashtag2.png" id="foto1" width="50px" height="50px"  class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+            <p class="p-2 flex-grow-1 nombre" id="nombre1">#tandillugarsoñado</p>
+        </div>
+        <div class="d-flex recomendada rounded" id="" style=" border: none;">
+            <img src="../img/hashtag2.png" id="foto1" width="50px" height="50px"  class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+            <p class="p-2 flex-grow-1 nombre" id="nombre1">#tandilturismo</p>
+        </div>
+        <div class="d-flex recomendada rounded" id="" style=" border: none;">
+            <img src="../img/hashtag2.png" id="foto1" width="50px" height="50px"  class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+            <p class="p-2 flex-grow-1 nombre" id="nombre1">#tandilcabañas</p>
+        </div>
+        <div class="d-flex recomendada rounded" id="" style=" border: none;">
+            <img src="../img/hashtag2.png" id="foto1" width="50px" height="50px"  class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+            <p class="p-2 flex-grow-1 nombre" id="nombre1">#tandilcuelga</p>
+        </div>
+        <div class="d-flex recomendada rounded" id="" style=" border: none;">
+            <img src="../img/hashtag2.png" id="foto1" width="50px" height="50px"  class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+            <p class="p-2 flex-grow-1 nombre" id="nombre1">#tandilcity</p>
+        </div>
+        <div class="d-flex recomendada rounded" id="" style=" border: none;">
+            <img src="../img/hashtag2.png" id="foto1" width="50px" height="50px"  class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+            <p class="p-2 flex-grow-1 nombre" id="nombre1">#tandilmap</p>
+        </div>
+        <div class="d-flex recomendada rounded" id="" style=" border: none;">
+            <img src="../img/hashtag2.png" id="foto1" width="50px" height="50px"  class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+            <p class="p-2 flex-grow-1 nombre" id="nombre1">#tandileleco</p>
+        </div>
+        <div class="d-flex recomendada rounded" id="" style=" border: none;">
+            <img src="../img/hashtag2.png" id="foto1" width="50px" height="50px"  class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+            <p class="p-2 flex-grow-1 nombre" id="nombre1">#tandildecoracion</p>
+        </div>
+        
+    </div>
+
+    <div id="lugares" style="display: none;">
+        <div class="d-flex recomendada rounded" id="" style=" border: none;">
+            <img src="../img/ubicacion.png" id="foto1" width="50px" height="50px"  class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+            <p class="p-2 flex-grow-1 nombre" id="nombre1">Cerveceria Harriz</p>
+        </div>
+        <div class="d-flex recomendada rounded" id="" style=" border: none;">
+            <img src="../img/ubicacion.png" id="foto1" width="50px" height="50px"  class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+            <p class="p-2 flex-grow-1 nombre" id="nombre1">Gluck Cerveceria - Tandil</p>
+        </div>
+        <div class="d-flex recomendada rounded" id="" style=" border: none;">
+            <img src="../img/ubicacion.png" id="foto1" width="50px" height="50px"  class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+            <p class="p-2 flex-grow-1 nombre" id="nombre1">Tandilia Cerveceria Boutique</p>
+        </div>
+        <div class="d-flex recomendada rounded" id="" style=" border: none;">
+            <img src="../img/ubicacion.png" id="foto1" width="50px" height="50px"  class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+            <p class="p-2 flex-grow-1 nombre" id="nombre1">Cerveceria Antares</p>
+        </div>
+        <div class="d-flex recomendada rounded" id="" style=" border: none;">
+            <img src="../img/ubicacion.png" id="foto1" width="50px" height="50px"  class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+            <p class="p-2 flex-grow-1 nombre" id="nombre1">Cerveceria Patagonia</p>
+        </div>
+        <div class="d-flex recomendada rounded" id="" style=" border: none;">
+            <img src="../img/ubicacion.png" id="foto1" width="50px" height="50px"  class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+            <p class="p-2 flex-grow-1 nombre" id="nombre1">Cerveceria Kunstmann</p>
+        </div>
+        <div class="d-flex recomendada rounded" id="" style=" border: none;">
+            <img src="../img/ubicacion.png" id="foto1" width="50px" height="50px"  class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+            <p class="p-2 flex-grow-1 nombre" id="nombre1">Cerveceria Tacuara</p>
+        </div>
+        <div class="d-flex recomendada rounded" id="" style=" border: none;">
+            <img src="../img/ubicacion.png" id="foto1" width="50px" height="50px"  class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+            <p class="p-2 flex-grow-1 nombre" id="nombre1">Cerveceria Jooks</p>
+        </div>
+        <div class="d-flex recomendada rounded" id="" style=" border: none;">
+            <img src="../img/ubicacion.png" id="foto1" width="50px" height="50px"  class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+            <p class="p-2 flex-grow-1 nombre" id="nombre1">Cerveceria Prinston</p>
+        </div>
+    </div>
+
+
+
+    <div id="regular-flow" style="display: none;">
+        <section class="publicaciones">
+            <article style="border-top: 10px #C4C4C4 solid; margin-top: 10px;">
                 
-                <div class="p-2 flex-grow-1">
-                    <p class="nombre">Mario Diaz</p>
-                    <p class="font-weight-light">PUBLICIDAD</p>
+                <div class="d-flex pub-1">
+                    <img src="../img/animal3.jpg" width="50px" height="50px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+                    
+                    <div class="p-2 flex-grow-1">
+                        <p class="nombre">Mario Diaz</p>
+                        <p class="font-weight-light">PUBLICIDAD</p>
+                    </div>
+                    
+                    <button class="p-2 btn-options" ><img src="../img/opciones.png" class="logo-options"></button>
                 </div>
+        
+                <div class="text-center">
+                    <img src="../img/publicidad3.jpg" class="publicidad rounded">
+                </div> 
                 
-                <button class="p-2 btn-options" ><img src="../img/opciones.png" class="logo-options"></button>
-            </div>
+                <ul class="list-group list-group-horizontal d-flex justify-content-between interacciones"> 
+                    <li><img src="../img/like.png" class="logo-like"> Me gusta</li>
+                    <li><img src="../img/comment.png" class="logo-comment"> Comentar</li>
+                    <li><img src="../img/share.png" class="logo-share"> Compartir</li>
+                </ul>
+            </article>
+        </section>
     
-            <div class="text-center">
-                <img src="../img/publicidad3.jpg" class="publicidad rounded">
-            </div> 
+
+        <article>
+            <h2 class="titulo-cuentas">Cuentas recomendadas</h2>
+            <div id="cuentas1">
+                <div class="d-flex recomendada rounded" id="rec1">
+                    <img src="../img/animal4.jpg" id="foto1" width="100px" height="100px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+                    <p class="p-2 flex-grow-1 nombre" id="nombre1">Agus Lopez</p>
+                    <button class="btn btn-primary" id="seguir1"><p id="text1" style="padding: 0; margin: 0%;">Seguir</p> </button>
+                </div>
+                <div class="d-flex recomendada rounded" id="rec2">
+                    <img src="../img/animal2.jfif" width="100px" height="100px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" id="img-perfil1" alt="">
+                    <p class="p-2 flex-grow-1 nombre">Fermin Maly</p>
+                    <button class="btn btn-primary" id="seguir2"><p id="text2" style="padding: 0; margin: 0%;">Seguir</p></button>
+                </div>
+                <div class="d-flex recomendada rounded" id="rec3" >
+                    <img src="../img/animal3.jpg" width="100px" height="100px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+                    <p class="p-2 flex-grow-1 nombre">Mario Diaz</p>
+                    <button class="btn btn-primary" id="seguir3"><p id="text3" style="padding: 0; margin: 0%;">Seguir</p> </button>
+                </div>
+        
+                <div style="margin-bottom: 70px;" class="text-center">
+                    <button class="btn btn-light" id="btn-ver-mas">Ver otros</button>
+                </div>
+        
+            </div>
             
-            <ul class="list-group list-group-horizontal d-flex justify-content-between interacciones"> 
-                <li><img src="../img/like.png" class="logo-like"> Me gusta</li>
-                <li><img src="../img/comment.png" class="logo-comment"> Comentar</li>
-                <li><img src="../img/share.png" class="logo-share"> Compartir</li>
-            </ul>
+
+            <div style="display: none;" id="cuentas2">
+                <div class="d-flex recomendada rounded"  id="rec4">
+                    <img src="../img/animal5.jpg" width="100px" height="100px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+                    <p class="p-2 flex-grow-1 nombre">Carlos Hernandez</p>
+                    <button class="btn btn-primary" id="seguir4"><p id="text4" style="padding: 0; margin: 0%;">Seguir</p> </button>
+                </div>
+                <div class="d-flex recomendada rounded " id="rec5">
+                    <img src="../img/animal3.jpg" width="100px" height="100px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+                    <p class="p-2 flex-grow-1 nombre">Mariela Gomez</p>
+                    <button class="btn btn-primary" id="seguir5"><p id="text5" style="padding: 0; margin: 0%;">Seguir</p></button>
+                </div>
+                <div class="d-flex recomendada rounded " id="rec6" >
+                    <img src="../img/persona1.png" width="100px" height="100px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
+                    <p class="p-2 flex-grow-1 nombre"> Diaz</p>
+                    <button class="btn btn-primary" id="seguir6"><p id="text6" style="padding: 0; margin: 0%;">Seguir</p> </button>
+                </div>
+
+                <div style="margin-bottom: 70px;" class="text-center">
+                    <button class="btn btn-light" id="btn-ver-mas2">Ver otros</button>
+                </div>
+            </div>
+            
+
         </article>
-    </section>
-   
 
-    <article>
-        <h2 class="titulo-cuentas">Cuentas recomendadas</h2>
-        <div id="cuentas1">
-            <div class="d-flex recomendada rounded" id="rec1">
-                <img src="../img/animal4.jpg" id="foto1" width="100px" height="100px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
-                <p class="p-2 flex-grow-1 nombre" id="nombre1">Agus Lopez</p>
-                <button class="btn btn-primary" id="seguir1"><p id="text1" style="padding: 0; margin: 0%;">Seguir</p> </button>
-            </div>
-            <div class="d-flex recomendada rounded" id="rec2">
-                <img src="../img/animal2.jfif" width="100px" height="100px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" id="img-perfil1" alt="">
-                <p class="p-2 flex-grow-1 nombre">Fermin Maly</p>
-                <button class="btn btn-primary" id="seguir2"><p id="text2" style="padding: 0; margin: 0%;">Seguir</p></button>
-            </div>
-            <div class="d-flex recomendada rounded" id="rec3" >
-                <img src="../img/animal3.jpg" width="100px" height="100px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
-                <p class="p-2 flex-grow-1 nombre">Mario Diaz</p>
-                <button class="btn btn-primary" id="seguir3"><p id="text3" style="padding: 0; margin: 0%;">Seguir</p> </button>
-            </div>
-    
-            <div style="margin-bottom: 70px;" class="text-center">
-                <button class="btn btn-light" id="btn-ver-mas">Ver otros</button>
-            </div>
-    
-        </div>
-        
-
-        <div style="display: none;" id="cuentas2">
-            <div class="d-flex recomendada rounded"  id="rec4">
-                <img src="../img/animal5.jpg" width="100px" height="100px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
-                <p class="p-2 flex-grow-1 nombre">Carlos Hernandez</p>
-                <button class="btn btn-primary" id="seguir4"><p id="text4" style="padding: 0; margin: 0%;">Seguir</p> </button>
-            </div>
-            <div class="d-flex recomendada rounded " id="rec5">
-                <img src="../img/animal3.jpg" width="100px" height="100px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
-                <p class="p-2 flex-grow-1 nombre">Mariela Gomez</p>
-                <button class="btn btn-primary" id="seguir5"><p id="text5" style="padding: 0; margin: 0%;">Seguir</p></button>
-            </div>
-            <div class="d-flex recomendada rounded " id="rec6" >
-                <img src="../img/persona1.png" width="100px" height="100px" class="rounded-circle z-depth-2 mr-auto p-2 foto-perfil" alt="">
-                <p class="p-2 flex-grow-1 nombre"> Diaz</p>
-                <button class="btn btn-primary" id="seguir6"><p id="text6" style="padding: 0; margin: 0%;">Seguir</p> </button>
-            </div>
-
-            <div style="margin-bottom: 70px;" class="text-center">
-                <button class="btn btn-light" id="btn-ver-mas2">Ver otros</button>
-            </div>
-        </div>
-        
-
-    </article>
-
-    
+    </div>
 
     <footer class="footer-home">
         <nav>
             <a href="home.html"><img src="../img/home.png" class="logo-home"></a>
-            <a href="busqueda.html"><img src="../img/lupa.png" class="logo-lupa"> </a>
+            <a href="busqueda.html"><img src="../img/lupa.png" class="logo-lupa rounded-circle" style="background-color: rgb(216, 214, 214);"> </a>
             <a href=""><img src="../img/persona.png" class="logo-persona"></a>
             <a href="login.html"><img src="../img/log-out.png" class="log-out"></a>
         </nav>

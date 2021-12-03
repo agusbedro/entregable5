@@ -32,7 +32,7 @@ function likear(numero){
     
     if(img_like.src == "http://127.0.0.1:5500/img/like.png")
         img_like.src = "http://127.0.0.1:5500/img/like-pink.png";
-    else if(img_like.src == "http://127.0.0.0:5500/img/like-pink.png")
+    else if(img_like.src == "http://127.0.0.1:5500/img/like-pink.png")
         img_like.src = "http://127.0.0.1:5500/img/like.png";
 }
 
@@ -120,42 +120,49 @@ btn_comment6.addEventListener("click", function(e){
 btn_like1.addEventListener("click", function(e) {
     let mensaje = document.getElementById('mgsPublicacion1');
     mensaje.innerHTML = '14 me gusta'
-    if(img_like.src == "http://127.0.0.0:5500/img/like-pink.png")
+    let img_like = document.getElementById("img-like1");
+    if(img_like.src == "http://127.0.0.1:5500/img/like-pink.png")
         mensaje.innerHTML = '13 me gusta'
     likear(1);
 });
 btn_like2.addEventListener("click", function(e) {
     let mensaje = document.getElementById('mgsPublicacion2');
     mensaje.innerHTML = '4 me gusta'
-    if(img_like.src == "http://127.0.0.0:5500/img/like-pink.png")
+    let img_like = document.getElementById("img-like2");
+
+    if(img_like.src == "http://127.0.0.1:5500/img/like-pink.png")
         mensaje.innerHTML = '3 me gusta'
     likear(2);
 });
 btn_like3.addEventListener("click", function(e) {
     let mensaje = document.getElementById('mgsPublicacion3');
     mensaje.innerHTML = '81 me gusta'
-    if(img_like.src == "http://127.0.0.0:5500/img/like-pink.png")
+    let img_like = document.getElementById("img-like3");
+    if(img_like.src == "http://127.0.0.1:5500/img/like-pink.png")
         mensaje.innerHTML = '80 me gusta'
     likear(3);
-});
-btn_like5.addEventListener("click", function(e) {
-    let mensaje = document.getElementById('mgsPublicacion5');
-    mensaje.innerHTML = '121 me gusta'
-    if(img_like.src == "http://127.0.0.0:5500/img/like-pink.png")
-        mensaje.innerHTML = '120 me gusta'
-    likear(5);
 });
 btn_like4.addEventListener("click", function(e) {
     let mensaje = document.getElementById('mgsPublicacion4');
     mensaje.innerHTML = '2 me gusta'
-    if(img_like.src == "http://127.0.0.0:5500/img/like-pink.png")
+    let img_like = document.getElementById("img-like4");
+    if(img_like.src == "http://127.0.0.1:5500/img/like-pink.png")
         mensaje.innerHTML = '1 me gusta'
     likear(4);
+});
+btn_like5.addEventListener("click", function(e) {
+    let mensaje = document.getElementById('mgsPublicacion5');
+    mensaje.innerHTML = '121 me gusta'
+    let img_like = document.getElementById("img-like5");
+    if(img_like.src == "http://127.0.0.1:5500/img/like-pink.png")
+        mensaje.innerHTML = '120 me gusta'
+    likear(5);
 });
 btn_like6.addEventListener("click", function(e) {
     let mensaje = document.getElementById('mgsPublicacion6');
     mensaje.innerHTML = '11 me gusta'
-    if(img_like.src == "http://127.0.0.0:5500/img/like-pink.png")
+    let img_like = document.getElementById("img-like6");
+    if(img_like.src == "http://127.0.0.1:5500/img/like-pink.png")
         mensaje.innerHTML = '10 me gusta'
     likear(6);
 });

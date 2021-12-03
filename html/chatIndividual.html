@@ -21,19 +21,23 @@
         <p style="font-size: x-small;">Activa hace 1 h</p>
     </header>
 
-    <section class="mensajesChat">
+    <section class="mensajesChat" id="mensaje-chat">
         <p style="text-align: center;">Lunes 17:15</p>
-        <p style="border-radius: 5px; background-color: grey; width: 180px; padding-left:10px; margin-left: 10px;">Hola, hiciste la tarea?</p>
-        <p style="border-radius: 5px; background-color: #0180be; width: 240px; padding-left:10px; margin-left: 130px;">Hola Agus, todavia no vos??</p>
-        <p style="border-radius: 5px; background-color: grey; width: 240px; padding-left:10px; margin-left: 10px;">Uhhh yo tampoco, la hacemos juntos?</p>
-        <p style="border-radius: 5px; background-color: #0180be; width: 160px; padding-left:10px; margin-left: 210px;">Ya le dije a German</p>
-        <p style="border-radius: 5px; background-color: grey; width: 240px; padding-left:10px; margin-left: 10px;">Uhh bueno, busco a otro entonces</p>
-        <p style="border-radius: 5px; background-color: #0180be; width: 240px; padding-left:10px; margin-left: 130px;">Dale suerte, cualquier cosa pregunta</p>
+        <p class="chat1">Hola, hiciste la tarea?</p>
+        <p class="chat2">Hola Agus, todavia no vos??</p>
+        <p class="chat1">Uhhh yo tampoco, la hacemos juntos?</p>
+        <p class="chat2">Ya le dije a German</p>
+        <p class="chat1">Uhh bueno, busco a otro entonces</p>
+        <p class="chat2">Dale suerte, cualquier cosa pregunta</p>
+        <p class="chat2 oculto"  id="oculto" style="margin-top: -10px;">Saludos</p>
 
     </section>
     
-    <input type="text" class="form-control " placeholder="Escribe aqui" style="border-radius: 5px; border: 1px solid #535758; width: 80%;">
+    <div style="display: flex;">
+        <input type="text" class="form-control" id="inpuy-mensaje" placeholder="Escribe aqui" style="border-radius: 5px; border: 1px solid #535758; width: 75%; margin-left: 10px;">
+        <button style="margin-left: 5px;" class="btn btn-light" id="btn-mensaje">Enviar</button>
+    </div>
 
-    
+    <script src="../js/mensaje.js"></script>
 </body>
 </html>
