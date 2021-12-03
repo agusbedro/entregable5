@@ -307,8 +307,8 @@ header p{
     }
 
     @keyframes movHuellas {
-        0%{background-position-y: 0vh}
-        100%{background-position-y: 1080px}
+        0%{transform: translateY(0);}
+        100%{transform: translateY(300px);}
     }
     
     .layer{
@@ -323,14 +323,11 @@ header p{
         animation: scroll 200s infinite linear;
     }
 
-    .huellas1{
+    .huella1{
         position: absolute;
         top: 10px;
         left: 10px;
-        background-image: url("../img/huella.png");
-        background-repeat: repeat-x;
-        background-size: cover;
-        animation: movHuellas 500s infinite linear;
+        animation: movHuellas 10s infinite linear;
     }
 
 
